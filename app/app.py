@@ -1,6 +1,6 @@
 import faust
-import settings
-from decoder import AvroSchemaDecoder
+from app import settings
+from app.decoder import AvroSchemaDecoder
 
 app = faust.App('my-app', broker=settings.KAFKA_BOOTSTRAP_SERVER)
 

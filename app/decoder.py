@@ -1,5 +1,5 @@
 import faust
-import settings
+from app import settings
 from confluent_kafka.avro import CachedSchemaRegistryClient
 from confluent_kafka.avro.serializer.message_serializer import MessageSerializer as AvroSerde
 
